@@ -1,10 +1,10 @@
-import express from "express";
-import * as dotenv from "dotenv";
-import cors from "cors";
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
 
-import connectDB from "./mongodb/connect.js";
-import postRoutes from "./routes/postRoutes.js";
-import dalleRoutes from "./routes/dalleRoutes.js";
+const connectDB = require("./mongodb/connect");
+const postRoutes = require("./routes/postRoutes");
+const dalleRoutes = require("./routes/dalleRoutes");
 
 dotenv.config();
 
